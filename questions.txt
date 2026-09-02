@@ -7,25 +7,77 @@ A: action
 R: result
 
 1. Tell me about a time where you solved a difficult problem.
-For me, it would be studying for a final where i didn't really know the topics well enough to pass the final.
-But my friends helped me find ways to study to help me grasp the topics. We did memorization, flashcards, solving problems, making it a game.
-But when i found out that none of those methods worked, i just looked over the notes and re-wrote them 3 times, i finally understood it. 
-It was difficult because i didn't know what was my study method because each class i learn differently. But now I know one of few ways I can actually learn.
+S: A final that I didn't know the topics well.
+T: the plan was to have my friends help me study for the final and try different study methods but also i try some on my own.
+A: We did memorization, flashcards, solving problems, making it a game. But when i found out that none of those methods worked, i just looked over the notes and re-wrote them 3 times, i finally understood it.
+R: It was difficult because i didn't know what was my study method because each class i learn differently. But now I know one of few ways I can actually learn.
 
 2. Give an example of how you handled a conflict on a team.
+S: It was me and two other people in charge of an office. We were supposed to get the clients, serve them and close up. But none of the people wanted to close up the office.
+T: The plan was one person checks the last client of the day, one was suppose to serve the client and the other tidy up so we can close up the office and go home.
+A: The secretary checked in the client, i served the client and did their taxes while my co-worker tidied up. But once the client left, my co-workers wanted to leave without locking up,
+but we have to lock up our own desks and computers. They thought it was fine to leave it unlocked but after telling them to lock uo because it was our desk/computer for the day. They finally
+decided to listen and lock up and then close the office.
+R: We all went home happy as the office wa cleaned and locked up for the next day.
 
 3. Tell me about a mistake you made and how you handled it.
+S: A final project that me and my friend had. Everything went well, i focused on JS while my friend did CSS and we would go over for HTML so its evenly worked.
+T: the plan was to complete our project and the professor checked our progress based on the previous commits.
+A: When i was working on my part of JS, i tried to add an audio mp3 file onto our project to get some extra credit, but the file was too big. I tried many ways to not let the project crash, but
+unfortunately the audio mp3 messed up our commits. I would always commit to github when i fixed/add something to the project. But when i try to commit the audio, it was too big and crashed
+the github. I went on google to see how to fix this, first it was to place the audio mp3 to a .gitignore but that didn't work. I tried to delete it on my VSCode but since I tried to commit it,
+it saved onto the web branch. I ended up like restarting our entire github and it deleted our previous commits but not our final. I told my friend about it and we decided to go with the professor.
+He told us that we could have talked to him and had it fixed. 
+R: Luckily the professor had already seen our progress and let us continue wrapping up the project. We got a 92 on it so yay.
 
 4. Describe a time when you saw a problem at work and took an initiative to fix it.
+S: Me and my co-worker were doing inventory for the school, we had to decide what was going to the trash and what was going to be kept. I couldn't do any heavy lifting because at the time, I had
+injured my back. So i was in charge of keeping track of everything.
+T: the plan was to just sit and write down whats being kept and whats being thrown away while my co-worker carry the heavy boxes and give them to me so i can write down what they are and document 
+them. But at the time, we were student workers so we had class. My co-worker had class and I didn't at the time.
+A: So the problem was now i had to carry the boxes and write them down. Basically do both
+the jobs as he was in class. So what I did instead of carrying boxes, i would just write on them, descrbing what it was and if it was trash or keep. By the time he came back, all he had to do was to
+carry the boxes marked trash to the bin. 
+R: We got done early and could leave to go home and study
 
 5. Tell me where you had to learn something new very quickly.
+S: In my first programming class, we were taught programming fundamentals in java, but our professor gave us a final to do a game in java.
+T: the plan was to make a game in java in groups. The thing was that we were supposed to figure it ourselves. Me and my group decided to make a snake game, but we did have some extra credit so the project
+could be graded higher.
+A: So me and my two other partners, we decided to make a snack game, unfortunately my partner's computer were not working for the software we used. We were using netbeans for the software, but when we made a repo
+in github, their netbeans couldn't connect to the repo so we all decided to use my computer to do the work. We would work in class and do zoom calls where i showed my screen while we all worked. At the time, I know
+nothing about Java while my partners did, so they would tell me what to type of they got permission on zoom to type using screen share. Slowly i picked up a few things about java, but apparently my partners kept clashing
+with their code and making the game not able to run. So i had to take over and tried to comprehend what they wrote. I eventually finished our game but it was kinda bad, it didnt crash though.
+R: we got a 75 only because of techincal difficulties. but at least i passed the class
 
 6. Describe a time where you had to manage mulitple deadlines at once.
+S: I would take half of my classes in-person and half online. I would always jot down what assignments were due what day and time.
+T: the plan was to finish 2 essays, do at least 3 discussion boards and reply to classmates for each discussion board and also take 2 timed quizzes all due in the same day. At the time, i was taking 6 classes so it was quite handful.
+But also i had errands to run, like tidy up my dorm, get food and put gas in my car.
+A: So on monday, i went to class, did one essay during lecture and one discussion board, when class ended, i went to go get food and put gas. After that i cleaned up my room within a timely manner. After cleaning then eating, i could 
+finish my last essay and do one discussion board and both quizes so at night i can do the last discussion board and then sleep.
+R: I would do this all within 2 days, i just forgot to specify that. But i usually get my work down in 2 days so i can focus on my school job.
 
 7. Tell me how to handle a difficult situation in a timely manner.
+S:
+T:
+A:
+R:
 
 8. Give an example on you resolved a misunderstanding between colleagues.
+S:
+T:
+A:
+R:
 
 9. Describe a long-term goal and a short-term goal you have.
+S:
+T:
+A:
+R:
 
 10. How would you complete a goal with a deadline?
+S:
+T:
+A:
+R:
