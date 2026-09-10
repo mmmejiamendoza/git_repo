@@ -1,5 +1,5 @@
 -- 1. Create a new table called record_logs:
--- Fields: log_id, record_id, field_changed, last_update, old_value, new_value
+-- Fields: log_id, record_id, field_changed, last_update, old_value, new_value 
 CREATE TABLE record_logs(
     log_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     record_id INT,
