@@ -1,14 +1,15 @@
 package com.demo.spring.service;
 import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.demo.spring.dao.StudentDAO;
 import com.demo.spring.domain.Student;
 import com.demo.spring.exceptions.StudentNotFoundException;
-
-import org.springframework.transaction.annotation.Transactional;
 
 @Service 
 public class StudentService {
@@ -61,9 +62,9 @@ public class StudentService {
      */
     
     @Transactional 
-    public Student updsateStudent(int id, Student student) {
+    public Student updateStudent(int id, Student student) {
       Student existingStudent = getStudentById(id);
-
+    
       existingStudent.setEmail(student.getEmail());
       existingStudent.setFirstName(student.getFirstName());
       existingStudent.setLastName(student.getLastName());

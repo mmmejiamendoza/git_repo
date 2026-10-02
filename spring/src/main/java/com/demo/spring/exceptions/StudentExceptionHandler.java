@@ -2,11 +2,10 @@ package com.demo.spring.exceptions;
 import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 //import com.demo.spring.exceptions.StudentNotFoundException;
 
 @RestControllerAdvice 
@@ -18,19 +17,22 @@ public class StudentExceptionHandler {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+    /* @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<StudentErrorResponse> handleValidationException(MethodArgumentNotValidException e) {
         StudentErrorResponse error = new StudentErrorResponse(HttpStatus.BAD_REQUEST.value(), "Validation failed, check input", System.currentTimeMillis());
 
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
-    }
+    } */
 
-    //@ExceptionHandler(MethodArgumentNotValidException.class)
-    //public ResponseEntity<StudentErrorResponse> handleValidationException(MethodArgumentNotValidException e) {
-        //String details = e.getBindingResult().getFieldError().stream().
-        //map(error -> error.getFalse() + ":" + error.getDefautMessage()).
-        //collect(Collectors.joining(":"));
-    //}
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<StudentErrorResponse> handleValidationException(MethodArgumentNotValidException e) {
+        String details = e.getBindingResult().getFieldErrors().stream()
+        .map(error -> error.getField() + ":" + error.getDefaultMessage())
+        .collect(Collectors.joining(":"));
+
+        StudentErrorResponse error = new StudentErrorResponse(HttpStatus.BAD_REQUEST.value(), details, System.currentTimeMillis());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
+    }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<StudentErrorResponse> handleGenericException(Exception e) {

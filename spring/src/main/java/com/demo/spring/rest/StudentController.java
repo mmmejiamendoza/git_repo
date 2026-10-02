@@ -1,5 +1,6 @@
 package com.demo.spring.rest;
 import java.util.List;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
 import com.demo.spring.domain.Student;
 import com.demo.spring.service.StudentService;
 
-import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 
 @RestController 
@@ -80,9 +81,8 @@ public class StudentController {
     }
 
     @PutMapping("/{id}")
-    public Student updateStudent(@PathVariable int id, @RequestBody Student student) {
+    public Student updateStudent(@PathVariable int id, @Valid @RequestBody Student student) {
       //TODO: process PUT request
-
-      return StudentService.updateStudent(id, student);
+      return studentService.updateStudent(id, student);
     }
 }
